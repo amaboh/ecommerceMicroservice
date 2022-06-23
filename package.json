@@ -1,0 +1,20 @@
+{
+  "name": "ecommercemicroservice",
+  "version": "1.0.0",
+  "description": "This is microservice architecture implemented in an e-commerce app with the use RabbitMQ in nodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amaboh/ecommerceMicroservice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amaboh/ecommerceMicroservice/issues"
+  },
+  "homepage": "https://github.com/amaboh/ecommerceMicroservice#readme"
+}
