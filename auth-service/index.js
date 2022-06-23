@@ -6,20 +6,33 @@ const User = require("./User");
 
 const app = express();
 
+app.use(express.json());
+
 const PORT = process.env.PORT || 7070;
 
+const url =  "mongodb://0.0.0.0/auth-service"
+
 mongoose.connect(
-  "mongodb://localhost/auth-service",
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  },
+    url,
+    {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+    },
   () => {
     console.log(`Auth-Service DB connected`);
   }
 );
 
-app.use(express.json());
+const db = mongoose.connection
+db.once('open', _ => {
+  console.log('Database connected:', url)
+})
+
+db.on('error', err => {
+  console.error('connection error:', err)
+})
+
+
 
 app.post("/auth/login", async (req, res) => {
   const { email, password } = req.body;
