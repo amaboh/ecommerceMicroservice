@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/amaboh/ecommerceMicroservice/issues"
   },
-  "homepage": "https://github.com/amaboh/ecommerceMicroservice#readme"
+  "homepage": "https://github.com/amaboh/ecommerceMicroservice#readme",
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1"
+  }
 }

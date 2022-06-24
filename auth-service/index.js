@@ -38,11 +38,12 @@ app.post("/auth/login", async (req, res) => {
   const { email, password } = req.body;
 
   const user = await User.find({ email });
+
   if (!user) {
     return res.json({ message: "User doesn't exist" });
   } else {
     // check if the entered password is valid
-    if (password !== user.password) {
+    if (password !== user[0].password) {
       return res.json({ message: "Password Incorrect" });
     }
     const payload = {
@@ -51,9 +52,7 @@ app.post("/auth/login", async (req, res) => {
     };
     jwt.sign(payload, "secret", (err, token) => {
       if (err) console.log(err);
-      else {
-        return res.json({ token: token });
-      }
+      else return res.json({ token: token })
     });
   }
 });
