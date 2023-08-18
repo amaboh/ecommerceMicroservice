@@ -5,7 +5,7 @@ This is microservice architecture implemented in an e-commerce app with the use 
 # ecommerceMicroservice
 
 ## Overview
-`ecommerceMicroservice` is a collection of microservices designed to power an e-commerce platform. Built with Node.js, this repository leverages the power of microservices architecture to ensure scalability, maintainability, and efficient data processing. From user authentication to order management, each service is dedicated to a specific functionality, ensuring a modular and clean codebase.
+`ecommerceMicroservice` is a mini microservice system designed to illustrate the concepts of message and broker  using an e-commerce platform. Built with Node.js, this repository leverages the power of microservices architecture to portray how microservices enable scalable and efficient data processing. From user authentication to order management, each service is dedicated to a specific functionality, ensuring a modular and clean codebase.
 
 ## Table of Contents
 - [Installation](#installation)
@@ -79,7 +79,7 @@ Use tools like Postman or cURL for testing the API endpoints.
 
 ---
 
-This is a basic structure, and you can always customize it further based on the specific needs and characteristics of your project. Remember to always keep the README updated as the project evolves.
+This is a basic structure, and you can always customize it further based on the specific needs and characteristics of your project. 
 
 ![MicroserviceSystem 001](https://user-images.githubusercontent.com/85511496/175569034-6d3cac31-6fba-4ec7-968a-80e96ddd5905.jpeg)
 ![MicroserviceSystem 002](https://user-images.githubusercontent.com/85511496/175569238-ef561d8e-cde0-420e-b34d-21733951c642.jpeg)
